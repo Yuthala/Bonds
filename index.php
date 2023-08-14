@@ -28,33 +28,36 @@
 	<title>Bonds</title>
 </head>
 <body>
+	<h1>Расчет купонных выплат</h1>
+	<h2>Введите дату</h2>
+	<div id="date"></div>
 	<table border="1">
-    <tr>
-		<td>id</td>
-		<td>Название</td>
-		<td>Кол-во</td>
-		<td>Номинал</td>
-		<td>Купон</td>
-		<td>Купонный период</td>
-		<td>Дата ближайшей выплаты</td>
-		<td>Размер выплаты</td>
-		<td>Maturity Date</td>
-		<td>Брокер</td>
-	</tr>
-    <?php foreach ($allUsers as $user): ?>
-        <tr>
-            <td><?= $user['id'] ?></td>
-            <td><?= $user['name'] ?></td>
-            <td><?= $user['qty'] ?></td>
-			<td><?= $user['face_value'] ?></td>
-			<td><?= $user['coupon'] ?></td>
-			<td><?= $user['coupon_period'] ?></td>
-			<td>здесь вычисления1</td>
-			<td>здесь вычисления2</td>
-			<td><?= $user['maturity_date'] ?></td>
-			<td><?= $user['broker'] ?></td>
-        </tr>
-    <?php endforeach; ?>
-</table>
+		<tr>
+			<td>id</td>
+			<td>Название</td>
+			<td>Кол-во</td>
+			<td>Номинал</td>
+			<td>Купон</td>
+			<td>Купонный период</td>
+			<td>Дата ближайшей выплаты</td>
+			<td>Размер выплаты</td>
+			<td>Maturity Date</td>
+			<td>Брокер</td>
+		</tr>
+		<?php foreach ($allUsers as $user): ?>
+			<tr>
+				<td><?= $user['id'] ?></td>
+				<td><?= $user['name'] ?></td>
+				<td><?= $user['qty'] ?></td>
+				<td><?= $user['face_value'] ?></td>
+				<td><?= $user['coupon'] ?></td>
+				<td><?= $user['coupon_period'] ?></td>
+				<td>здесь вычисления1</td>
+				<td>здесь вычисления2</td>
+				<td><?= $user['maturity_date'] ?></td>
+				<td><?= $user['broker'] ?></td>
+			</tr>
+		<?php endforeach; ?>
+	</table>
 </body>
 </html>
