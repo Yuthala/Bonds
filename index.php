@@ -25,6 +25,10 @@
 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Dina Polousova">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.min.css">
 	<title>Bonds</title>
 </head>
 <body>
@@ -45,19 +49,22 @@
 			<td>Брокер</td>
 		</tr>
 		<?php foreach ($allUsers as $user): ?>
-			<tr>
-				<td><?= $user['id'] ?></td>
-				<td><?= $user['name'] ?></td>
-				<td><?= $user['qty'] ?></td>
-				<td><?= $user['face_value'] ?></td>
-				<td><?= $user['coupon'] ?></td>
-				<td><?= $user['coupon_period'] ?></td>
-				<td>здесь вычисления1</td>
-				<td>здесь вычисления2</td>
-				<td><?= $user['maturity_date'] ?></td>
-				<td><?= $user['broker'] ?></td>
-			</tr>
+		<tr>
+			<td><?= $user['id'] ?></td>
+			<td><?= $user['name'] ?></td>
+			<td><?= $user['qty'] ?></td>
+			<td><?= $user['face_value'] ?></td>
+			<td><?= $user['coupon'] ?></td>
+			<td><?= $user['coupon_period'] ?></td>
+			<td>здесь вычисления1</td>
+			<td>здесь вычисления2</td>
+			<td><?= $user['maturity_date'] ?></td>
+			<td><?= $user['broker'] ?></td>
+		</tr>
 		<?php endforeach; ?>
 	</table>
 </body>
+<footer>
+	<div class="footer">© Dina Polousova</div>
+</footer>
 </html>
