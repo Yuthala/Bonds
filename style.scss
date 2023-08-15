@@ -2,6 +2,7 @@ body {
 	font-family: 'Gilroy', sans-serif;
 	font-style: normal;
 	font-weight: 400;
+	box-sizing: border-box;
 }
 
 .wrap {
@@ -21,11 +22,20 @@ h2 {
 	text-transform: uppercase;
 }
 
+p {
+	font-weight: 300;
+	font-size: 1em;
+}
+
 table {
 	border-collapse: collapse;
 	margin: 0 auto;
 	margin-top: 3em;
 	text-align: center;
+}
+
+.header {
+	font-weight: bold;
 }
 
 td {
@@ -38,6 +48,9 @@ td {
 	display: table-cell;
 	width: 15em;
 	height: 4em;
+	color: #00cc9c;
+	font-weight: bold;
+	font-size: 4em;
 }
 
 .footer {

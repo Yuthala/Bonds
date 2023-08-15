@@ -35,9 +35,10 @@
 	<div class="wrap">
 		<h1>Расчет купонных выплат</h1>
 		<h2>Введите дату</h2>
+		<p>дата, на которую будут произведены вычисления</p>
 		<div id="date"></div>
 		<table>
-			<tr>
+			<tr class="header">
 				<td>id</td>
 				<td>Название</td>
 				<td>Кол-во</td>
@@ -57,8 +58,8 @@
 				<td><?= $user['face_value'] ?></td>
 				<td><?= $user['coupon'] ?></td>
 				<td><?= $user['coupon_period'] ?></td>
-				<td>здесь вычисления1</td>
-				<td>здесь вычисления2</td>
+				<td id="coupon-date">здесь вычисления1</td>
+				<td id="coupon-amount">здесь вычисления2</td>
 				<td><?= $user['maturity_date'] ?></td>
 				<td><?= $user['broker'] ?></td>
 			</tr>
