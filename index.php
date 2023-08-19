@@ -54,14 +54,14 @@
 			<tr>
 				<td><?= $user['id'] ?></td>
 				<td><?= $user['name'] ?></td>
-				<td><?= $user['qty'] ?></td>
-				<td><?= $user['face_value'] ?></td>
-				<td><?= $user['coupon'] ?></td>
-				<td><?= $user['coupon_period'] ?></td>
-				<td id="coupon-date">здесь вычисления1</td>
-				<td id="coupon-amount">здесь вычисления2</td>
-				<td><?= $user['maturity_date'] ?></td>
-				<td><?= $user['broker'] ?></td>
+				<td class="quantity"><?= $user['qty'] ?></td>
+				<td class="face-value"><?= $user['face_value'] ?></td>
+				<td class="coupon"><?= $user['coupon'] ?></td>
+				<td class="coupon-period"><?= $user['coupon_period'] ?></td>
+				<td class="coupon-date">здесь вычисления1</td>
+				<td class="coupon-amount">здесь вычисления2</td>
+				<td class="maturity-date"><?= $user['maturity_date'] ?></td>
+				<td class="broker"><?= $user['broker'] ?></td>
 			</tr>
 			<?php endforeach; ?>
 		</table>
