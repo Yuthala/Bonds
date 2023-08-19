@@ -7,4 +7,9 @@ window.addEventListener('DOMContentLoaded', function() {
 		couponAmount = document.querySelectorAll('coupon-amount'),
 
 		quantity = document.querySelectorAll('quantity'),
+		faceValue = document.querySelectorAll('face-value'),
+		couponPercentage = document.querySelectorAll('coupon'),
+		couponPeriod = document.querySelectorAll('coupon-period'),
+		maturityDate = documnet.querySelectorAll('maturity-date');
+
 })
