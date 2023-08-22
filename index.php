@@ -45,6 +45,7 @@
 				<td>Номинал</td>
 				<td>Купон</td>
 				<td>Купонный период</td>
+				<td class="invisble">Дата последней выплаты</td>
 				<td>Дата ближайшей выплаты</td>
 				<td>Размер выплаты</td>
 				<td>Maturity Date</td>
@@ -58,6 +59,7 @@
 				<td class="face-value"><?= $user['face_value'] ?></td>
 				<td class="coupon"><?= $user['coupon'] ?></td>
 				<td class="coupon-period"><?= $user['coupon_period'] ?></td>
+				<td class="latest-coupon-date invisible"></td>
 				<td class="coupon-date">здесь вычисления1</td>
 				<td class="coupon-amount">здесь вычисления2</td>
 				<td class="maturity-date"><?= $user['maturity_date'] ?></td>
