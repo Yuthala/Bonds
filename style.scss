@@ -7,6 +7,7 @@ body {
 
 .wrap {
 	min-height: 90vh;
+	padding: 20px;
 }
 
 h1 {
@@ -46,8 +47,8 @@ td {
 #date {
 	border: 2px solid #b81816;
 	display: table-cell;
-	width: 15em;
-	height: 4em;
+	width: 200px;
+	height: 70px;
 	color: #00cc9c;
 	font-weight: bold;
 	font-size: 4em;
@@ -55,6 +56,11 @@ td {
 
 .invisible {
 	display: none;
+}
+
+.visible {
+	display: table-cell;
+	color: blue;
 }
 
 .footer {
