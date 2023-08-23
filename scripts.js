@@ -13,4 +13,5 @@ window.addEventListener('DOMContentLoaded', function() {
 		maturityDate = documnet.querySelectorAll('.maturity-date'),
 		latestCouponDate = document.querySelectorAll('.latest-coupon-date');
 
+
 })

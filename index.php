@@ -37,6 +37,11 @@
 		<h2>Введите дату</h2>
 		<p>дата, на которую будут произведены вычисления</p>
 		<div id="date"></div>
+
+		<p>Тестовое поле</p>	
+		<div id="latest-coupon-date"></div>
+		<div id="nearest-coupon-date"></div>
+
 		<table>
 			<tr class="header">
 				<td>id</td>
