@@ -45,6 +45,7 @@
 			<div id="coupon-period"><?= $user['coupon_period'] ?></div>
 		<?php endforeach; ?>
 		<div id="nearest-coupon-date"></div>
+		<div id="test"></div>
 
 		<!--<table>
 			<tr class="header">

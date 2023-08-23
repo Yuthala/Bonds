@@ -9,10 +9,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		quantity = document.querySelectorAll('.quantity'),
 		faceValue = document.querySelectorAll('.face-value'),
-		couponPercentage = document.querySelectorAll('.coupon'),
-		couponPeriod = document.querySelectorAll('.coupon-period')[0],
+		coupon = document.querySelectorAll('.coupon'),
+		couponPeriod = document.getElementById('coupon-period'),
 		maturityDate = document.querySelectorAll('.maturity-date'),
-		latestCouponDate = document.getElementById('latest-coupon-date');
+		latestCouponDate = document.getElementById('latest-coupon-date'),
+
+		test = document.getElementById('test');
 
 	// const newDate = new Date();
 	// console.log(newDate);
@@ -21,7 +23,15 @@ window.addEventListener('DOMContentLoaded', function() {
 
 	let msec = Date.parse(latestCouponDate.innerHTML);
 	console.log(msec);
-	let newMsec = msec + ()
-	const newDate = new Date(msec);
-	console.log(newDate);
-})
+	let newMsec = msec + (couponPeriod.innerHTML * 24 * 60 * 60 * 1000);
+	console.log(newMsec);
+	const newDate = new Date(newMsec);
+	console.log(`данные из БД: ${newDate}`);
+
+	//Проверка//
+	const d = new Date('2023-07-11');
+	d.setDate(d.getDate() + 91);
+	document.getElementById("test").innerHTML = d;
+	console.log(`тест: ${d}`);
+
+});
