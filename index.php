@@ -38,11 +38,15 @@
 		<p>дата, на которую будут произведены вычисления</p>
 		<div id="date"></div>
 
+		<!--ПОЛЯ ДЛЯ ТЕСТИРОВАНИЯ-->
 		<p>Тестовое поле</p>	
-		<div id="latest-coupon-date"></div>
+		<?php foreach ($allUsers as $user): ?>
+			<div id="latest-coupon-date"><?= $user['latest_coupon_date'] ?></div>
+			<div id="coupon-period"><?= $user['coupon_period'] ?></div>
+		<?php endforeach; ?>
 		<div id="nearest-coupon-date"></div>
 
-		<table>
+		<!--<table>
 			<tr class="header">
 				<td>id</td>
 				<td>Название</td>
@@ -56,7 +60,7 @@
 				<td>Maturity Date</td>
 				<td>Брокер</td>
 			</tr>
-			<?php foreach ($allUsers as $user): ?>
+			//<?php foreach ($allUsers as $user): ?>
 			<tr>
 				<td><?= $user['id'] ?></td>
 				<td><?= $user['name'] ?></td>
@@ -71,8 +75,9 @@
 				<td class="broker"><?= $user['broker'] ?></td>
 			</tr>
 			<?php endforeach; ?>
-		</table>
+		</table>-->
 	</div>
+	<script src="scripts.js"></script>
 </body>
 <footer>
 	<div class="footer">© Yuthala @ GitHub</div>

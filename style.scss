@@ -54,12 +54,13 @@ td {
 	font-size: 4em;
 }
 
-#latest-coupon-date, #nearest-coupon-date {
+#latest-coupon-date, #nearest-coupon-date, #coupon-period {
 	border: 2px solid blue;
 	display: block;
 	width: 200px;
 	height: 70px;
 	margin-top: 10px;
+	text-align: center;
 }
 
 .invisible {
