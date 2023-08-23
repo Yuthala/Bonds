@@ -13,8 +13,24 @@ window.addEventListener('DOMContentLoaded', function() {
 		couponPeriod = document.getElementById('coupon-period'),
 		maturityDate = document.querySelectorAll('.maturity-date'),
 		latestCouponDate = document.getElementById('latest-coupon-date'),
+		nearestCouponDate = document.getElementById('nearest-coupon-date'),
 
 		test = document.getElementById('test');
+
+		const months = [
+			"января", 
+			"февраля", 
+			"марта", 
+			"апреля", 
+			"мая", 
+			"июня", 
+			"июня", 
+			"августа", 
+			"сентября", 
+			"октября", 
+			"ноября", 
+			"декабря"
+		]; 
 
 	// const newDate = new Date();
 	// console.log(newDate);
@@ -27,6 +43,10 @@ window.addEventListener('DOMContentLoaded', function() {
 	console.log(newMsec);
 	const newDate = new Date(newMsec);
 	console.log(`данные из БД: ${newDate}`);
+	
+
+	let dateFormat = `${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()}`;
+	nearestCouponDate.textContent = dateFormat;
 
 	//Проверка//
 	const d = new Date('2023-07-11');
