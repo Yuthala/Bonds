@@ -31,12 +31,7 @@ window.addEventListener('DOMContentLoaded', function() {
 			"ноября", 
 			"декабря"
 		]; 
-
-	// const newDate = new Date();
-	// console.log(newDate);
-	// newDate.setDate(newDate.getDate() + 50);
-	// document.getElementById('nearest-coupon-date').innerHTML = newDate;
-
+	//Рассчитываем дату ближайшего платежа
 	let msec = Date.parse(latestCouponDate.innerHTML);
 	console.log(msec);
 	let newMsec = msec + (couponPeriod.innerHTML * 24 * 60 * 60 * 1000);
@@ -44,7 +39,6 @@ window.addEventListener('DOMContentLoaded', function() {
 	const newDate = new Date(newMsec);
 	console.log(`данные из БД: ${newDate}`);
 	
-
 	let dateFormat = `${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()}`;
 	nearestCouponDate.textContent = dateFormat;
 
