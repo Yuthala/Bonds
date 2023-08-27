@@ -51,7 +51,11 @@ td {
 	height: 70px;
 	color: #00cc9c;
 	font-weight: bold;
-	font-size: 4em;
+	font-size: 24px;
+	::placeholder {
+		color: gray;
+		font-size: 16px;
+	}
 }
 
 #latest-coupon-date, #nearest-coupon-date, #coupon-period {

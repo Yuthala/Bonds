@@ -36,7 +36,7 @@
 		<h1>Расчет купонных выплат</h1>
 		<h2>Введите дату</h2>
 		<p>дата, на которую будут произведены вычисления</p>
-		<div id="date"></div>
+		<input type="date" id="date" placeholder="Нажмите для выбора даты"></input>
 
 		<!--ПОЛЯ ДЛЯ ТЕСТИРОВАНИЯ-->
 		<p>Тестовое поле</p>	
@@ -47,7 +47,7 @@
 		<div id="nearest-coupon-date"></div>
 		<div id="test"></div>
 
-		<!--<table>
+		<table>
 			<tr class="header">
 				<td>id</td>
 				<td>Название</td>
@@ -61,7 +61,7 @@
 				<td>Maturity Date</td>
 				<td>Брокер</td>
 			</tr>
-			//<?php foreach ($allUsers as $user): ?>
+			<?php foreach ($allUsers as $user): ?>
 			<tr>
 				<td><?= $user['id'] ?></td>
 				<td><?= $user['name'] ?></td>
@@ -76,7 +76,7 @@
 				<td class="broker"><?= $user['broker'] ?></td>
 			</tr>
 			<?php endforeach; ?>
-		</table>-->
+		</table>
 	</div>
 	<script src="scripts.js"></script>
 </body>
