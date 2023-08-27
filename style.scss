@@ -52,9 +52,12 @@ td {
 	color: #00cc9c;
 	font-weight: bold;
 	font-size: 24px;
-	::placeholder {
+	vertical-align: middle;
+	&::placeholder {
 		color: gray;
 		font-size: 16px;
+		vertical-align: middle;
+		display: inline-block;
 	}
 }
 

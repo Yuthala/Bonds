@@ -37,8 +37,12 @@ window.addEventListener('DOMContentLoaded', function() {
 	const newDate = new Date(newMsec);
 	console.log(`данные из БД: ${newDate}`);
 
-	let dateFormat = `${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()}`;
-	nearestCouponDate.textContent = dateFormat;
+	calcDate.addEventListener('input', function() {
+		let dateFormat = `${newDate.getDate(calcDate.value)} ${months[newDate.getMonth(calcDate.value)]} ${newDate.getFullYear(calcDate.value)}`;
+		comsole.log(dateFormat);
+		nearestCouponDate.textContent = dateFormat;
+	})
+
 
 	//Проверка//
 	const d = new Date('2023-07-11');
