@@ -33,12 +33,10 @@ window.addEventListener('DOMContentLoaded', function() {
 		]; 
 	//Рассчитываем дату ближайшего платежа
 	let msec = Date.parse(latestCouponDate.innerHTML);
-	console.log(msec);
 	let newMsec = msec + (couponPeriod.innerHTML * 24 * 60 * 60 * 1000);
-	console.log(newMsec);
 	const newDate = new Date(newMsec);
 	console.log(`данные из БД: ${newDate}`);
-	
+
 	let dateFormat = `${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()}`;
 	nearestCouponDate.textContent = dateFormat;
 
